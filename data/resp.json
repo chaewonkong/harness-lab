@@ -1,0 +1,29 @@
+{
+    "model": "qwen3:8b",
+    "created_at": "2026-06-07T13:54:56.519266Z",
+    "message": {
+        "role": "assistant",
+        "content": "",
+        "thinking": "Okay, the user is asking for the current time in London, UK. I need to figure out which function to use. The available tool is get_current_time, which requires the city name as an argument. Since the user mentioned London, I should call that function with \"London\" as the city parameter. Let me make sure there are no other possible cities with the same name, but in this context, London is the capital of the UK. So the correct function call is get_current_time with city set to London.\n",
+        "tool_calls": [
+            {
+                "id": "call_9itcjdqy",
+                "function": {
+                    "index": 0,
+                    "name": "get_current_time",
+                    "arguments": {
+                        "city": "London"
+                    }
+                }
+            }
+        ]
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 23888305385,
+    "load_duration": 3181762392,
+    "prompt_eval_count": 166,
+    "prompt_eval_duration": 1779071000,
+    "eval_count": 130,
+    "eval_duration": 18924198000
+}
